@@ -23,7 +23,7 @@ class Message(object):
         self.messages = []
 
     def get(self, id):
-        for message in self.todos:
+        for message in self.messages:
             if message['id'] == id:
                 return message
         api.abort(404, "Message {} doesn't exist".format(id))
